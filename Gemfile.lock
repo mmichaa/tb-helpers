@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    tb-helpers (0.0.1)
+    tb-helpers (0.1.0)
       rails (~> 3.2.13)
 
 GEM
