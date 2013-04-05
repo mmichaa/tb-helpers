@@ -1,12 +1,22 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>TbHelpers &mdash; Dummy</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-  <%= yield %>
-</body>
+<html lang="en">
+  <head>
+    <title>TbHelpers &mdash; Dummy</title>
+    <%= stylesheet_link_tag "application", :media => "all" %>
+    <%= javascript_include_tag "application" %>
+
+    <%= tb_stylesheet_link_tag %>
+    <%= tb_javascript_include_tag %>
+
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <div class="container">
+      <%= yield %>
+    </div>
+
+    <footer class="footer">
+      &copy; Michael Nowak 2013
+    </footer>
+  </body>
 </html>

@@ -1,7 +1,15 @@
-.bundle/
-log/*.log
-pkg/
-test/dummy/db/*.sqlite3
-test/dummy/log/*.log
-test/dummy/tmp/
-test/dummy/.sass-cache
+# Gem
+/.bundle/
+/log/*.log
+/pkg/
+/test/dummy/db/*.sqlite3
+/test/dummy/log/*.log
+/test/dummy/tmp/
+/test/dummy/.sass-cache
+
+# Mac OS X
+*.DS_Store
+
+# Project-Files
+/*workspace*
+/*project*

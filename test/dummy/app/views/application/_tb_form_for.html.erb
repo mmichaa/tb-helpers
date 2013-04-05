@@ -1,0 +1,75 @@
+<%= form_tag('#', class: 'form-horizontal') do %>
+  <%= tb_fieldset(legend: 'legend of tb_fieldset() here') do %>
+
+    <%= tb_control_group do %>
+      <%= tb_control_label 'Using tb_control_label() here' %>
+      <%= tb_controls do %>
+        <%= text_field_tag 'tb_input', nil, placeholder: 'tb_input' %>
+      <% end %>
+    <% end %>
+
+    <%= tb_control_group do %>
+      <%= tb_control_label 'Using tb_controls() here' %>
+      <%= tb_controls do %>
+        <%= tb_checkbox_label do %>
+          <%= check_box_tag 'tb_input', nil, placeholder: 'tb_input' %>
+          Using tb_checkbox_label() here
+        <% end %>
+
+        <%= tb_radio_label do %>
+          <%= radio_button_tag 'tb_input', 'tb_input' %>
+          Using tb_radio_label() here
+        <% end %>
+      <% end %>
+    <% end %>
+
+    <%= tb_control_group do %>
+      <%= tb_control_label 'Using tb_input_addon_prepend() here' %>
+      <%= tb_controls do %>
+        <%= tb_input_addon_prepend(addon: 'foo') do %>
+          <%= text_field_tag 'tb_input', nil, placeholder: 'tb_input' %>
+        <% end %>
+      <% end %>
+    <% end %>
+
+    <%= tb_control_group do %>
+    <%= tb_control_label 'Using tb_input_addon_append() here' %>
+      <%= tb_controls do %>
+        <%= tb_input_addon_append(addon: 'bar') do %>
+          <%= text_field_tag 'tb_input', nil, placeholder: 'tb_input' %>
+        <% end %>
+      <% end %>
+    <% end %>
+
+    <%= tb_control_group(context: :success) do %>
+    <%= tb_control_label 'Using tb_input_addon_ pre_and_append() here' %>
+      <%= tb_controls do %>
+        <%= tb_input_addon_pre_and_append(addon: ['foo', 'bar']) do %>
+          <%= text_field_tag 'tb_input', nil, placeholder: 'tb_input' %>
+        <% end %>
+      <% end %>
+    <% end %>
+
+    <%= tb_control_group do %>
+    <%= tb_control_label 'Using tb_input_help_inline() here' %>
+      <%= tb_controls do %>
+        <%= text_field_tag 'tb_input', nil, placeholder: 'tb_input' %>
+        <%= tb_input_help_inline 'Using tb_input_help_inline() here' %>
+      <% end %>
+    <% end %>
+
+    <%= tb_control_group(context: :info) do %>
+    <%= tb_control_label 'Using tb_input_help_block() here' %>
+      <%= tb_controls do %>
+        <%= text_field_tag 'tb_input', nil, placeholder: 'tb_input' %>
+        <%= tb_input_help_block 'Using tb_input_help_block() here' %>
+      <% end %>
+    <% end %>
+
+    <%= tb_form_actions do %>
+      <%= tb_button 'Using' %>
+      <%= tb_button 'tb_form_actions()', context: :primary %>
+      <%= tb_button 'here' %>
+    <% end %>
+  <% end %>
+<% end %>
