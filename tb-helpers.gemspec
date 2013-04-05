@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.summary     = "Twitter-Bootstrap-Helpers -- Rails 3 View-Helpers for Twitter-Bootstrap"
   s.description = "Twitter-Bootstrap-Helpers -- Rails 3 View-Helpers for Twitter-Bootstrap"
 
-  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails", "~> 3.2.13"
