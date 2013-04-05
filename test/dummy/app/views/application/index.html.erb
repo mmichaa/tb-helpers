@@ -1,0 +1,7 @@
+<h1>TbHelpers &mdash; Demo</h1>
+<hr />
+
+<% @simple_methodes.each do |simple_methode, simple_args| %>
+  <h2><%= simple_methode %></h2>
+  <%= render_tb_helper_methode(simple_methode, simple_args) %>
+<% end %>

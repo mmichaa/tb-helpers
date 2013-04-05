@@ -17,8 +17,7 @@ module TbHelpers::Components
     set_or_prepend_option!(options, :class, classes.join(' '))
 
     content_tag(tag, options, nil, escape) do
-      #concat icon_close_link(:data => {:dismiss => 'alert'})
-      concat icon_close_button(:data => {:dismiss => 'alert'})
+      concat tb_icon_close_button(:data => {:dismiss => 'alert'}) if closeable
       concat content_tag(:h4, heading, {:class => 'alert-heading'}, true) if heading
       concat flash[key]
     end
@@ -66,7 +65,7 @@ module TbHelpers::Components
   #
 
   def tb_well(content = nil, options = nil, &block)
-    content, options = content_or_options_with_block?(content, options, block)
+    content, options = content_or_options_with_block?(content, options, &block)
     tag = delete_option_if_exists!(options, :tag, :div)
     escape = delete_option_if_exists!(options, :escape, true)
 
@@ -95,11 +94,11 @@ module TbHelpers::Components
   end
 
   def tb_icon_close_link(options = nil)
-    icon_close(:link, options)
+    tb_icon_close(:link, options)
   end
 
   def tb_icon_close_button(options = nil)
-    icon_close(:button, options)
+    tb_icon_close(:button, options)
   end
 
   def tb_clearfix(options = nil)
