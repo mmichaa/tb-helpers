@@ -12,11 +12,12 @@ Gem::Specification.new do |s|
   s.homepage    = "https://github.com/mmichaa/tb-helpers"
   s.summary     = "Twitter-Bootstrap-Helpers -- Rails 3 View-Helpers for Twitter-Bootstrap"
   s.description = "Twitter-Bootstrap-Helpers -- Rails 3 View-Helpers for Twitter-Bootstrap"
+  s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
   s.test_files = Dir["test/**/*"]
 
-  s.add_dependency "rails", "~> 3.2.0"
+  s.add_dependency "rails", ">= 3.2.0"
 
   s.add_development_dependency "sqlite3"
 end
