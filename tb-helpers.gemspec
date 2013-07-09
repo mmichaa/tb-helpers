@@ -10,8 +10,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Michael Nowak"]
   s.email       = ["thexsystem@gmail.com"]
   s.homepage    = "https://github.com/mmichaa/tb-helpers"
-  s.summary     = "Twitter-Bootstrap-Helpers -- Rails 3 View-Helpers for Twitter-Bootstrap"
-  s.description = "Twitter-Bootstrap-Helpers -- Rails 3 View-Helpers for Twitter-Bootstrap"
+  s.summary     = "Twitter-Bootstrap-Helpers -- Rails (>= 3.2) View-Helpers for Twitter-Bootstrap"
+  s.description = "Twitter-Bootstrap-Helpers -- Rails (>= 3.2) View-Helpers for Twitter-Bootstrap"
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
